@@ -10,8 +10,20 @@ body.insertAdjacentHTML('beforeend', `<div>Numero Computer: ${numeroRandomComput
 
 //dichiaro chi ha vinto tra determinando il valore più alto 
 
+if(numeroRandomUser > numeroRandomComputer ) {
+     body.insertAdjacentElement('beforeend', `<div>Complimenti hai vinto tu</div>`) 
+     console.log("vinto")
+}
 
+if (numeroRandomUser < numeroRandomComputer) {
+     // body.insertAdjacentElement('beforeend', `<div>Mi dispiace ha vinto il PC</div>` )
+     console.log("perso")
+}
 
+else if (numeroRandomUser == numeroRandomComputer) {
+     // body.insertAdjacentElement('beforeend', `<div>Pareggio</div>` )
+     console.log("pareggio")
+}
 
 
 
